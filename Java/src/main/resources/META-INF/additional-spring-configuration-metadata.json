@@ -1,0 +1,79 @@
+{
+  "properties": [
+    {
+      "name": "file.upload-dir",
+      "type": "java.lang.String",
+      "description": "Directory for Storing General User Files and Chat Attachments."
+    },
+    {
+      "name": "profile.pic.upload-dir",
+      "type": "java.lang.String",
+      "description": "Directory for Storing Profile Pictures of Users."
+    },
+    {
+      "name": "default.profile.pic.name",
+      "type": "java.lang.String",
+      "description": "Filename of Default Profile Picture."
+    },
+    {
+      "name": "file.blocked-extensions",
+      "type": "java.util.Set<java.lang.String>",
+      "description": "File Extensions Blocked from Being Uploaded."
+    },
+    {
+      "name": "profile.pic.allowed-types",
+      "type": "java.util.Set<java.lang.String>",
+      "description": "MIME Types Allowed for Profile Picture Uploads."
+    },
+    {
+      "name": "profile.pic.allowed-size",
+      "type": "java.lang.Long",
+      "description": "Maximum Profile Picture Upload Size in Bytes."
+    },
+    {
+      "name": "jwt.access.expiration",
+      "type": "java.lang.Long",
+      "description": "Expiration Duration for Access Token in Milliseconds."
+    },
+    {
+      "name": "jwt.access.secret",
+      "type": "java.lang.String",
+      "description": "Secret Key for Access Token Signing."
+    },
+    {
+      "name": "jwt.refresh.expiration",
+      "type": "java.lang.Long",
+      "description": "Expiration Duration for Refresh Token in Milliseconds."
+    },
+    {
+      "name": "jwt.refresh.secret",
+      "type": "java.lang.String",
+      "description": "Secret Key for Refresh Token Signing."
+    },
+    {
+      "name": "jwt.access.name",
+      "type": "java.lang.String",
+      "description": "Cookie name for JWT Access Token."
+    },
+    {
+      "name": "jwt.refresh.name",
+      "type": "java.lang.String",
+      "description": "Cookie name for JWT Refresh Token."
+    },
+    {
+      "name": "file.cache.max-age",
+      "type": "java.time.Duration",
+      "description": "Maximum Age for Cache of File in User's Browser."
+    },
+    {
+      "name": "profile.pic.cache.max-age",
+      "type": "java.time.Duration",
+      "description": "Maximum Age for Cache of Profile Pic in User's Browser."
+    },
+    {
+      "name": "hibernate.search.reindex-on-startup",
+      "type": "java.lang.Boolean",
+      "description": "Hibernate Search Lucene Reindex."
+    }
+  ]
+}
