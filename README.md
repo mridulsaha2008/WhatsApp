@@ -69,11 +69,16 @@ spring.datasource.url=your_db_url
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.datasource.driver-class-name=your_db_driver_class_name
+spring.jpa.properties.hibernate.dialect=your_db_hibernate_dialect e.g. org.hibernate.dialect.PostgreSQLDialect
+file.upload-dir=your_file_storage_location
+profile.pic.upload-dir=your_profile_pic_storage_location
+default.profile.pic.name=your_default_profile_pic_name_with_extension
 spring.jpa.hibernate.ddl-auto=validate
 hibernate.search.reindex-on-startup=false
 ```
 *Note: You can add your own domain in `app.cors.allowed-origins`*
 *Note: On first startup ensure `spring.jpa.hibernate.ddl-auto` is set to `create` and `hibernate.search.reindex-on-startup` is set to `true`*
+*Note: It is recommended to change `jwt.access.secret` and `jwt.refresh.secret`*
 
 ### 2. Frontend Configuration
 Navigate to the frontend directory, install dependencies, and build with `vite`:
@@ -83,7 +88,7 @@ npm install
 vite build
 ```
 
-*Note: Ensure `vite build` output directory is set to `Java/src/resources/static` or you can manually copy the output of `vite build` to it.*
+*Note: Ensure `vite` config output directory is set to `Java/src/resources/static` or you can manually copy the output of `vite build` to it.*
 
 ### 3. Testing WebRTC on Mobile
 Run the Spring Boot application. It will default to `http://localhost:8080`.
