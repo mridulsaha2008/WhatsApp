@@ -23,6 +23,8 @@ import java.security.Principal;
 public class FileDownloadController {
 
     private final FileDownloadService fileDownloadService;
+    @Value("{file.cache.max-age}")
+    private Duration userFileMaxAge;
 
     @GetMapping("/download/{fileUuid}")
     public ResponseEntity<Resource> downloadFile(@PathVariable String fileUuid, Principal principal) throws IOException {
@@ -39,6 +41,7 @@ public class FileDownloadController {
         return ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType(result.resolvedContentType()))
                 .header(HttpHeaders.CONTENT_DISPOSITION, contentDisposition.toString())
+                .cacheControl(CacheControl.maxAge(userFileMaxAge).cachePublic().mustRevalidate())
                 .contentLength(result.metadata().getFileSize())
                 .body(result.resource());
     }
