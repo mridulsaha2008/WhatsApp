@@ -19,7 +19,9 @@ A full-stack, real-time messaging and VoIP application inspired by WhatsApp Web.
 * **Call Controls:** In-call UI allows users to mute audio or disable video tracks dynamically. Local video is rendered Picture-in-Picture (PiP) style.
 * **Call History:** Dedicated view logging incoming, outgoing, and missed calls with timestamps and status-specific iconography.
 
-### 🗄️ Caching & Performance
+### 🔍 Search & Performance
+* **Lucene Mass Indexing:** Uses Hibernate Search (Apache Lucene) to build and maintain inverted full-text indexes for high-speed, scalable user lookups.
+* **Fast User Discovery:** Instant user search across `username`, `firstName`, and `lastName` with fuzzy matching and partial wildcard support.
 * **IndexedDB Persistence:** Chat histories are asynchronously stored locally in the browser via `WhatsApp_IndexedDB`. 
 * **Offline-First Rendering:** On chat selection, messages are immediately loaded from IndexedDB while the application fetches the delta from the server, resulting in instant load times.
 
@@ -47,6 +49,7 @@ A full-stack, real-time messaging and VoIP application inspired by WhatsApp Web.
 
 ### Backend
 * **Java 26 / Spring Boot**
+* **Search Engine:** Hibernate Search / Apache Lucene (Mass Indexing)
 * **Spring WebSockets** (STOMP Broker)
 * **Spring Security** (Auth/JWT)
 * **Spring Data JPA / Hibernate**
