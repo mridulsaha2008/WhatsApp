@@ -76,9 +76,11 @@ default.profile.pic.name=your_default_profile_pic_name_with_extension
 spring.jpa.hibernate.ddl-auto=validate
 hibernate.search.reindex-on-startup=false
 ```
-*Note: You can add your own domain in `app.cors.allowed-origins`*
-*Note: On first startup ensure `spring.jpa.hibernate.ddl-auto` is set to `create` and `hibernate.search.reindex-on-startup` is set to `true`*
-*Note: It is recommended to change `jwt.access.secret` and `jwt.refresh.secret`*
+*Note: You can add your own domain in `app.cors.allowed-origins`.*
+
+*Note: On first startup ensure `spring.jpa.hibernate.ddl-auto` is set to `create` and `hibernate.search.reindex-on-startup` is set to `true`.*
+
+*Note: It is recommended to change `jwt.access.secret` and `jwt.refresh.secret`.*
 
 ### 2. Frontend Configuration
 Navigate to the frontend directory, install dependencies, and build with `vite`:
@@ -102,7 +104,7 @@ ngrok http --host-header=localhost 8080
 1. Copy the generated `https://...ngrok-free.app` URL.
 2. Open this URL on your mobile browser to safely test camera and microphone access.
 
-*Note: Ensure `https://...ngrok-free.app` is added in `app.cors.allowed-origins`*
+*Note: Ensure `https://...ngrok-free.app` is added in `app.cors.allowed-origins`.*
 
 ---
 
