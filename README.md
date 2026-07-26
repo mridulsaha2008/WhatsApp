@@ -46,7 +46,7 @@ A full-stack, real-time messaging and VoIP application inspired by WhatsApp Web.
 * **Icons:** Lucide React
 
 ### Backend
-* **Java 21+ / Spring Boot 4.X**
+* **Java 26 / Spring Boot**
 * **Spring WebSockets** (STOMP Broker)
 * **Spring Security** (Auth/JWT)
 * **Spring Data JPA / Hibernate**
