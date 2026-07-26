@@ -22,7 +22,7 @@ import java.time.Duration;
 public class AvatarController {
 
     private final AvatarService avatarService;
-    @Value("{profile.pic.cache.max-age}")
+    @Value("${profile.pic.cache.max-age}")
     private Duration profilePicMaxAge;
 
     @GetMapping("/avatar/{username}")
