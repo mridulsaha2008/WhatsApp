@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/',
   build: {
-    outDir: 'D:/Learning/WhatsApp/Java/src/main/resources/static',
+    outDir: '../Java/src/main/resources/static',
     emptyOutDir: true,
   }
 });
