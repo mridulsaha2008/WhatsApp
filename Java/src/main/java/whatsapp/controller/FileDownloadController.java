@@ -23,7 +23,7 @@ import java.security.Principal;
 public class FileDownloadController {
 
     private final FileDownloadService fileDownloadService;
-    @Value("{file.cache.max-age}")
+    @Value("${file.cache.max-age}")
     private Duration userFileMaxAge;
 
     @GetMapping("/download/{fileUuid}")
