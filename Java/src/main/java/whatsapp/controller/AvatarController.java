@@ -22,6 +22,8 @@ import java.time.Duration;
 public class AvatarController {
 
     private final AvatarService avatarService;
+    @Value("{profile.pic.cache.max-age}")
+    private Duration profilePicMaxAge;
 
     @GetMapping("/avatar/{username}")
     public ResponseEntity<Resource> getProfileAvatar(@PathVariable String username, Principal principal) {
@@ -33,7 +35,7 @@ public class AvatarController {
 
         return ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType(avatarResult.contentType()))
-                .cacheControl(CacheControl.maxAge(Duration.ofHours(1)).cachePrivate().mustRevalidate())
+                .cacheControl(CacheControl.maxAge(profilePicMaxAge).cachePrivate().mustRevalidate())
                 .body(avatarResult.resource());
     }
 
