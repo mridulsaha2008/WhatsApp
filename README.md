@@ -37,6 +37,50 @@ A full-stack, real-time messaging and VoIP application inspired by WhatsApp Web.
 
 ---
 
+## 📷 Screenshots
+### 🖥️ Desktop Interface:
+* **Login Page:**
+<img src="Interface Screenshots/Desktop Interface/Login.png" alt="Login Page" width="500">
+
+* **Registration Page:**
+<img src="Interface Screenshots/Desktop Interface/Registration.png" alt="Registration Page" width="500">
+
+* **Chat Page:**
+<img src="Interface Screenshots/Desktop Interface/Chat.png" alt="Chat Page" width="500">
+
+* **User Search Page:**
+<img src="Interface Screenshots/Desktop Interface/User Search.png" alt="User Search Page" width="500">
+
+* **Call History Page:**
+<img src="Interface Screenshots/Desktop Interface/Call History.png" alt="Call History Page" width="500">
+
+* **Profile Page:**
+<img src="Interface Screenshots/Desktop Interface/Profile.png" alt="Profile Page" width="500">
+
+### 📱 Mobile Interface:
+* **Login Page:**
+<img src="Interface Screenshots/Mobile Interface/Login.jpg" alt="Login Page" width="250">
+
+* **Registration Page:**
+<img src="Interface Screenshots/Mobile Interface/Registration.jpg" alt="Registration Page" width="250">
+
+* **Home Page:**
+<img src="Interface Screenshots/Mobile Interface/Home.jpg" alt="Home Page" width="250">
+
+* **Chat Page:**
+<img src="Interface Screenshots/Mobile Interface/Chat.jpg" alt="Chat Page" width="250">
+
+* **User Search Page:**
+<img src="Interface Screenshots/Mobile Interface/User Search.jpg" alt="User Search Page" width="250">
+
+* **Call History Page:**
+<img src="Interface Screenshots/Mobile Interface/Call History.jpg" alt="Call History Page" width="250">
+
+* **Profile Page:**
+<img src="Interface Screenshots/Mobile Interface/Profile.jpg" alt="Profile Page" width="250">
+
+---
+
 ## 💻 Tech Stack
 
 ### Frontend
