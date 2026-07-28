@@ -57,6 +57,9 @@ A full-stack, real-time messaging and VoIP application inspired by WhatsApp Web.
 * **Profile Page:**
 <img src="Interface Screenshots/Desktop Interface/Profile.png" alt="Profile Page" width="500">
 
+* **Video Call Page:**
+<img src="Interface Screenshots/Desktop Interface/Video Call.jpg" alt="Video Call Page" width="500">
+
 ### 📱 Mobile Interface:
 * **Login Page:**
 <img src="Interface Screenshots/Mobile Interface/Login.jpg" alt="Login Page" width="250">
@@ -78,6 +81,9 @@ A full-stack, real-time messaging and VoIP application inspired by WhatsApp Web.
 
 * **Profile Page:**
 <img src="Interface Screenshots/Mobile Interface/Profile.jpg" alt="Profile Page" width="250">
+
+* **Video Call Page:**
+<img src="Interface Screenshots/Mobile Interface/Video Call.jpg" alt="Video Call Page" width="250">
 
 ---
 
